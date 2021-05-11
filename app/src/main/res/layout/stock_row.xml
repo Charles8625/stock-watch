@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="2dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginBottom="4dp"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/stockSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/stock_symbol"
+        android:textColor="#1EFF27"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lastPrice"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lastPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="145.23"
+        android:textColor="#1EFF27"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/priceChange"
+        app:layout_constraintStart_toEndOf="@+id/stockSymbol" />
+
+    <TextView
+        android:id="@+id/priceChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="0.99"
+        android:textColor="#1EFF27"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/percentChange"
+        app:layout_constraintEnd_toStartOf="@+id/percentChange" />
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/company_name"
+        android:textColor="#1EFF27"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/stockSymbol"
+        app:layout_constraintTop_toBottomOf="@+id/stockSymbol" />
+
+    <TextView
+        android:id="@+id/percentChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="(0.38%)"
+        android:textColor="#1EFF27"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/arrowView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:text="@string/negative"
+        android:textAlignment="viewEnd"
+        android:textColor="#1EFF27"
+        app:layout_constraintBaseline_toBaselineOf="@+id/priceChange"
+        app:layout_constraintEnd_toStartOf="@+id/priceChange" />
+</androidx.constraintlayout.widget.ConstraintLayout>

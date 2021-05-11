@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Stock Watch</string>
+    <string name="stock_symbol">Stock Symbol</string>
+    <string name="company_name">Company Name</string>
+    <string name="file_name">stocksJSONFile.json</string>
+    <string name="add_stock">Add Stock</string>
+    <string name="positive">\u25B2</string>
+    <string name="negative">\u25BC</string>
+</resources>
